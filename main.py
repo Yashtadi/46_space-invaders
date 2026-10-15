@@ -1,5 +1,5 @@
 import pygame
-from game.game_engine import GameEngine
+from game.game_engine import GameEngine, FPS
 
 # Initialize pygame/Start application
 pygame.init()
@@ -13,8 +13,7 @@ pygame.display.set_caption("Space Invaders - Pygame Version")
 BLACK = (0, 0, 0)
 
 # Clock
-clock = pygame.time.Clock()
-FPS = 60
+clock = pygame.time.Clock()  # runs at FPS from game_engine
 
 # Game loop
 engine = GameEngine(WIDTH, HEIGHT)
